@@ -324,11 +324,11 @@ public class Tetris extends JFrame {
 	}
 	
 	public void printItems(List<String> items) {
-    // This is the enhanced_for_statement
-    for (String item : items) {
-        System.out.println(item);
-    }
-}
+		// This is the enhanced_for_statement
+		for (String item : items) {
+			System.out.println(item);
+		}
+	}
 
 	/**
 	 * Updates the game and handles the bulk of it's logic.
