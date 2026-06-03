@@ -229,7 +229,7 @@ public class Tetris extends JFrame {
 					}
 					break;
 				
-
+				}
 			}
 			
 			@Override
