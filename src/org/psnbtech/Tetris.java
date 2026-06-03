@@ -330,6 +330,16 @@ public class Tetris extends JFrame {
 		}
 	}
 
+	public void processItems() {
+		int count = 0;
+		
+		// This is the do_statement
+		do {
+			count++;
+			System.out.println("Processing item " + count);
+		} while (count < 5);
+	}
+	
 	/**
 	 * Updates the game and handles the bulk of it's logic.
 	 */
