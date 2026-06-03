@@ -311,6 +311,9 @@ public class Tetris extends JFrame {
 					Thread.sleep(FRAME_TIME - delta);
 				} catch(Exception e) {
 					e.printStackTrace();
+				} finally{
+					logicTimer.setPaused(true);
+					logicTimer.setPaused(false);
 				}
 			}
 		}
