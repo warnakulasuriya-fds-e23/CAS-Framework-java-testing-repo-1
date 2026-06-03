@@ -227,7 +227,7 @@ public class Tetris extends JFrame {
 					if(isGameOver || isNewGame) {
 						resetGame();
 					}
-					break;
+					
 				
 				}
 			}
