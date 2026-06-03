@@ -229,13 +229,13 @@ public class Tetris extends JFrame {
 					}
 					break;
 				
-				}
 				default:
 					if(!isGameOver && !isNewGame) {
 						isPaused = !isPaused;
 						logicTimer.setPaused(isPaused);
 					}
 					break;
+				}
 			}
 			
 			@Override
