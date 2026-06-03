@@ -339,7 +339,24 @@ public class Tetris extends JFrame {
 			System.out.println("Processing item " + count);
 		} while (count < 5);
 	}
-	
+
+	public void searchMatrix(int[][] matrix, int target) {		
+		outerLoop: // <--- This is the label
+		for (int i = 0; i < matrix.length; i++) {
+			
+			for (int j = 0; j < matrix[i].length; j++) {
+				if (matrix[i][j] == target) {
+					System.out.println("Found it!");
+					
+					// A standard 'break' would only exit the 'j' loop.
+					// A labeled break exits the 'i' loop completely!
+					break outerLoop; 
+				}
+			}
+		}
+		// 'break outerLoop' jumps execution straight to here.
+	}
+
 	/**
 	 * Updates the game and handles the bulk of it's logic.
 	 */
